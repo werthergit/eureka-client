@@ -8,8 +8,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-boot-demo-02-1</name>
-	<description>RESTfull API简单项目的快速搭建</description>
+	<name>eureka-client</name>
+	<description>eureka-client 客户端</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

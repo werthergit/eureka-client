@@ -17,13 +17,15 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Administrator
  *
  */
-@EnableDiscoveryClient            //通过该注解，实现服务发现，注册
+//通过该注解，实现服务发现，注册
+@EnableDiscoveryClient
 @SpringBootApplication
 public class EurekaClientApplication {
 
     public static void main(String[] args) {
+        SpringApplication.run(EurekaClientApplication.class, args);
         //SpringApplication.run(EurekaClientApplication.class, args);
-        new SpringApplicationBuilder(EurekaClientApplication.class).web(true).run(args);
+       // new SpringApplicationBuilder(EurekaClientApplication.class).web(true).run(args);
     }
 
 }

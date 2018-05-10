@@ -4,9 +4,14 @@ spring:
   application:
     name: cloud-client    #为你的应用起个名字，该名字将注册到eureka注册中心
 
+security:
+  user:
+    name: admin
+    password: 123456
+
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1110/eureka/
+      defaultZone: http://admin:123456@localhost:1110/eureka/
   instance:
     preferIpAddress: true
